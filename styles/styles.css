@@ -37,6 +37,10 @@
 
 /* General Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--ff-primary);
@@ -148,9 +152,9 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 9;
   transform: translateX(100%);
-  transition: trasnform 250ms cubic-bezier(.5, 0, .5, 1);
+  transition: transform 400ms cubic-bezier(.5, 0, .5, 1);
 }
 
 .nav__list {
@@ -182,6 +186,27 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
+  z-index: 10;
+}
+
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
 }
 
 .hamburger {
@@ -195,7 +220,7 @@ header {
   width: 2em;
   height: 3px;
   border-radius: 1em;
-  background: var(--clr-dark);
+  background: var(--clr-accent);
   transition: transform 250ms ease-in-out;
 }
 
@@ -423,4 +448,18 @@ header {
 
 .social-list__link {
   padding: .5em;
+}
+
+/* Individual Portfolio Item */
+
+.portfolio-item-individual {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2em 2em;
+}
+
+.portfolio-item-individual p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
