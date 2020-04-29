@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Mello</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- pegar só os icones de rede social -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Inicial</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">Meus Serviços</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#about" class="nav__link">Sobre Mim</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">Meus Trabalhos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Item Intro -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        SpotCode
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">um spotify clone</p>
+      <img src="img/spotcode/dashboard-resize.png" alt="SpotCode" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+      <div class="portfolio-item-stack">
+        <h3>Stack de tecnologias utilizadas:</h3>
+        <p>Ruby on Rails, SQLite3, React, JavaScript</p>
+        <p>
+          <strong>GitHub:</strong>          
+          <a href="https://github.com/dmmello1989/spotcode">https://github.com/dmmello1989/spotcode</a>
+        </p>
+      </div>
+      <div class="portfolio-item-textbox">
+        <div class="content">
+          <p>
+            Primeiro projeto com <strong>Ruby on Rails!</strong> <br><br>
+            Esse é o SpotCode, clone do Spotify, feito durante a Semana Super Full Stack da 
+            <strong>OneBitCode</strong>, ministrado pelo Leonardo Scorza.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item-imagebox">
+        <div class="content">
+          <img src="img/spotcode/home.png" alt="SpotCode">
+          <span>Página Inicial</span>
+        </div>
+      </div>
+      <div class="portfolio-item-textbox">
+        <div class="content">
+          <p>
+            Gosto muito de fazer projetos full stack e não me limitar apenas ao front-end. 
+            Mexer com <strong>Ruby</strong> e <strong>Rails</strong> pela primeira vez foi desafiador e, 
+            ao mesmo tempo, muito gratificante. <br><br>
+            Diferente do <strong>Node.Js</strong> que estou acostumado, mas claro, tem suas semelhanças. 
+            Outra vez trabalhando com <strong>SQLite 3</strong>, super tranquilo de usar.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item-imagebox">
+        <div class="content">
+          <img src="img/spotcode/dashboard.png" alt="SpotCode">
+          <span>Dashboard</span>
+        </div>
+      </div>
+      <div class="portfolio-item-textbox">
+        <div class="content">
+          <p>
+            A combinação de <strong>React</strong> com <strong>Bulma</strong> e um pouco de 
+            <strong>Styled Components</strong> dominou o frontend. <br><br>
+            Já havia usado <strong>Bulma</strong> em um projeto pequeno, 
+            mas agora no SpotCode pude ampliar suas funcionalidades. 
+            O UI do aplicativo ficou bem legal, parecido com o <strong>Spotify</strong> mesmo.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item-imagebox">
+        <div class="content">
+          <img src="img/spotcode/album.png" alt="SpotCode">
+          <span>Detalhes do Album</span>
+        </div>
+      </div>
+      <div class="portfolio-item-textbox">
+        <div class="content">
+          <p>
+            Dessa vez não teve React Native, o <strong>design responsivo</strong> do aplicativo se dá 
+            pela transformação do mesmo em uma <strong>PWA</strong> pelo Rails, rápido e fácil!
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item-imagebox">
+        <div class="content">
+          <img src="img/spotcode/search.png" alt="SpotCode">
+          <span>Busca</span>
+        </div>
+      </div>
+      <div class="portfolio-item-textbox">
+        <div class="content">
+          <p>
+            O SpotCode tem funcionalidades semelhantes ao Spotify. 
+            Podemos explorar <strong>categorias</strong> de músicas para encontrar 
+            <strong>músicas, albums e artistas</strong> de determinado estilo musical. 
+            Se você achou algo que curtiu muito, pode salvar nos seus <strong>favoritos</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio-item-imagebox">
+        <div class="content">
+          <img src="img/spotcode/category.png" alt="SpotCode">
+          <span>Categorias</span>
+          <img src="img/spotcode/favorites.png" alt="SpotCode">
+          <span>Favoritos</span>
+        </div>
+      </div>
+      </div>
+      <div class="portfolio-item-textbox">
+        <div class="content">
+          <p>
+            Apesar de já estar bem estruturado, planejo continuar trabalhando neste projeto, 
+            começando por melhorias nas telas de Log In e de Artistas, além de outros polimentos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:dmmello1989@gmail.com" class="footer__link">dmmello1989@gmail.com</a>
+      <!-- escolher uns link legal -->
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/dmmello1989" class="social-list__link" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://stackoverflow.com/users/10968110/daniel-mello" class="social-list__link" target="_blank">
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
