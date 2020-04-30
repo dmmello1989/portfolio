@@ -481,6 +481,7 @@ header {
   max-width: 800px;
   padding: 1.5em 0;
   text-align: justify;
+  font-size: var(--fs-h3);
 }
 
 .portfolio-item-imagebox {
