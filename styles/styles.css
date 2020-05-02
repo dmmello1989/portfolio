@@ -97,6 +97,10 @@ strong {
   transform: scale(1.1);
 }
 
+.btn.btn-cv {
+  width: fit-content;
+}
+
 /* Tipography */
 
 h1,
@@ -150,7 +154,9 @@ header {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav {
